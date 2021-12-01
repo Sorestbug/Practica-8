@@ -37,7 +37,7 @@ int main(int argc, char **argv){// Cabecera de argumentos por linea de comandos
 
 
 	for(i = 0; i < Usuario; i++){
-		printf("\n Ingrese el numero de cuenta: ");
+		printf("\n Ingrese un numero de cuenta para el usuario %d",(i+1));
 		printf("\n Ejemplo 678123 \n-> ");
 		scanf("%i",&Cuenta[i]);
 		printf("\n Ingrese la cantidad de dinero: \n-> ");
@@ -48,6 +48,7 @@ int main(int argc, char **argv){// Cabecera de argumentos por linea de comandos
 		printf("\n Numero de Cuenta: %i", Cuenta[i]);
 		printf("\n Dinero: %f", Dinero[i]);
 	}
+	printf("\n");
 
 	Mayor = Dinero[0];
 	Menor = Dinero[0];
